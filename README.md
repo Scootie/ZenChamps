@@ -10,7 +10,7 @@ By combining Scrapy and Selenium, you get the speed of the first with the thorou
 
 As fast as the script is, it's still written with structure in mind. Instead of directly calling individual table cells, we crawl the DOM to find all tables, and parse each one. The benefit of this approach is that it's highly scaleable and the underlying code is more flexible when GAW makes changes to the web interface. For example, adding a champion list to support "Top 10 HashStalker Users" only required adding `0:"stalker"` to an array.
 
-This was adapted from a rather complex scraper that I wrote to track a whole bunch of things in ZenPortal. Currently, I'm working on a couple of other projects, and I haven't had time to update ZenChamps to include a generic write function. Personally, I'd suggest using dataset to throw the parsed data into SQLite DB. This should make it easy to track and look up information.
+This was adapted from a rather complex scraper that I wrote to track a whole bunch of things in ZenPortal. Currently, I'm working on a couple of other projects, and I haven't had time to update ZenChamps to include a generic write function. Personally, I'd suggest using [dataset](http://dataset.readthedocs.org/) to throw the parsed data into SQLite DB. This should make it easy to track and look up information.
 
 ## Settings
 
